@@ -1,0 +1,36 @@
+# Core dependencies
+requests>=2.31.0
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# AI/ML APIs
+openai>=1.0.0
+perplexityai>=0.1.0
+elevenlabs>=0.2.0
+
+# LangChain & LangGraph
+langchain>=0.1.0
+langgraph>=0.0.40
+langchain-openai>=0.0.5
+langchain-community>=0.0.20
+
+# Google APIs
+google-auth>=2.23.0
+google-auth-oauthlib>=1.1.0
+google-auth-httplib2>=0.1.1
+google-api-python-client>=2.100.0
+google-generativeai>=0.3.0  # Gemini API for scripts and images
+google-cloud-storage>=2.10.0  # GCS for hosting files for Creatomate
+google-cloud-aiplatform>=1.38.0  # Vertex AI for Gemini Veo video generation
+
+# Web framework (for webhooks)
+fastapi>=0.100.0
+uvicorn>=0.23.0
+
+# Scheduling
+apscheduler>=3.10.0
+
+# Utilities
+python-dateutil>=2.8.0
+mutagen>=1.47.0  # For reading audio file metadata (duration)
+cloudinary>=1.36.0  # Optional: Cloud-based video processing with audio overlay
