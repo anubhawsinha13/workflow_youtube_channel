@@ -8,7 +8,7 @@ Gather verified facts and information about a video topic using Perplexity API.
 - `num_facts` (int, optional): Number of key facts to extract (default: 4)
 
 ## Execution
-1. **Research**: Run `execution/research_topic.py` with the topic as argument
+1. **Research**: Run `python scripts/research_brief.py "<topic>"`. This calls the shared `aegis-research` package with the `youtube` profile and writes `projects/{project_name}/research/research_{timestamp}.json`. `execution/research_topic.py` uses the same package when it is installed.
 2. **Manual Review**: Review the research output (script saved to `projects/{project_name}/research/research_{timestamp}.json`)
 3. **Review Step**: Run `execution/review_research.py` to approve, edit, or regenerate
 4. **Update After Review**: Edit the research JSON file directly, then review again
